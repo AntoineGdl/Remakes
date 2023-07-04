@@ -1,5 +1,70 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+nav {
+    background-color: aliceblue;
+    padding: 33px;
+}
+
+.container-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 0px 60px; */
+    /* height: 100%; */
+}
+
+nav .logo {
+
+}
+
+nav .container-header .titles {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-item {
+    position: relative;
+    /* margin-right: 40px; */
+    padding: 25px;
+}
+
+.title-item::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    /* margin-right: 20px; Espace entre le point et le titre */
+}
+
+
+.orange::before {
+    background-color: rgb(208, 134, 23);
+}
+
+.yellow::before {
+    background-color: rgb(146, 178, 18);
+}
+
+.pink::before {
+    background-color: rgb(125, 4, 90);
+}
+
+.green::before {
+    background-color: rgb(40, 141, 12);
 }
