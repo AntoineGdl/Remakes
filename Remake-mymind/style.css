@@ -6,27 +6,31 @@
 }
 
 body {
-    background-color: rgb(186, 181, 181);
+    /* background-color: rgb(186, 181, 181); */
     padding-left: 10vw;
     padding-right: 10vw;
     font-family: 'Open Sans', sans-serif;
+
 }
 
 nav {
+    z-index: 5;
     background-color: transparent;
+    position: relative;
 }
 
 .container-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 40px;
+    padding-top: 40px;
 }
 
 nav .logo {
     color: black;
     font-size: large;
     font-weight: 700;
+    padding-left: 30px;
 }
 
 nav .container-header .titles {
@@ -39,7 +43,7 @@ nav .container-header .titles {
 .title-item {
     position: relative;
     padding-left: 40px;
-    color: aliceblue;
+    color: rgb(110, 114, 118);
     font-size: 1.2rem;
 }
 
@@ -64,7 +68,7 @@ nav .container-header .titles {
 }
 
 .pink::before {
-    background-color: rgb(125, 4, 90);
+    background-color: rgb(235, 18, 173);
 }
 
 .green::before {
@@ -74,6 +78,7 @@ nav .container-header .titles {
 .button-register {
     display: flex;
     align-items: center;
+    margin-right: 30px;
 }
 
 .button-register button {
@@ -87,15 +92,18 @@ nav .container-header .titles {
     color: white;
     font-size: 1rem;   
     cursor: pointer;
+    font-weight: bold;
 }
 
 .button-register {
     transition: margin-right 0.3s ease-in-out;
     transition-delay: 0.2s;
+    padding-left: 0px 30px 0px 0px;
 }
 
 .button-register:hover {
-    box-shadow: 10px 10px 10px rgba(165, 164, 164, 0.5);
+    box-shadow: 5px 5px rgba(211, 209, 209, 0.2);
+    border-radius: 20px;
     transition: box-shadow 0.3s ease-in-out;
     transition-delay: 0s;
 }
@@ -109,3 +117,26 @@ nav .container-header .titles {
     margin-right: 1px;
 }
 
+.section-header {
+    background-image: linear-gradient(to right, #f89b48, #ff7e5d, #ff5e84, #ff4ab8, #f258f2);
+    height: 100vh;
+    position: relative;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.cercle-container{
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+.cercle{
+    height: 50vw;
+    width: 50vw;
+    background-color: #fff;
+    border-radius: 50%;
+    
+}
