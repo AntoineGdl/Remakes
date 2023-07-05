@@ -2,29 +2,31 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 body {
-    background-color: black;
+    background-color: rgb(186, 181, 181);
     padding-left: 10vw;
     padding-right: 10vw;
+    font-family: 'Open Sans', sans-serif;
 }
 
 nav {
-    background-color: aliceblue;
-    padding: 33px;
+    background-color: transparent;
 }
 
 .container-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* padding: 0px 60px; */
-    /* height: 100%; */
+    margin: 40px;
 }
 
 nav .logo {
-
+    color: black;
+    font-size: large;
+    font-weight: 700;
 }
 
 nav .container-header .titles {
@@ -36,20 +38,20 @@ nav .container-header .titles {
 
 .title-item {
     position: relative;
-    /* margin-right: 40px; */
-    padding: 25px;
+    padding-left: 40px;
+    color: aliceblue;
+    font-size: 1.2rem;
 }
 
 .title-item::before {
     content: "";
     position: absolute;
     top: 50%;
-    left: 15px;
+    left: 28px;
     transform: translateY(-50%);
     width: 6px;
     height: 6px;
     border-radius: 50%;
-    /* margin-right: 20px; Espace entre le point et le titre */
 }
 
 
@@ -68,3 +70,42 @@ nav .container-header .titles {
 .green::before {
     background-color: rgb(40, 141, 12);
 }
+
+.button-register {
+    display: flex;
+    align-items: center;
+}
+
+.button-register button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: orangered;
+    border: none;
+    padding: 15px;
+    border-radius: 20px;
+    color: white;
+    font-size: 1rem;   
+    cursor: pointer;
+}
+
+.button-register {
+    transition: margin-right 0.3s ease-in-out;
+    transition-delay: 0.2s;
+}
+
+.button-register:hover {
+    box-shadow: 10px 10px 10px rgba(165, 164, 164, 0.5);
+    transition: box-shadow 0.3s ease-in-out;
+    transition-delay: 0s;
+}
+
+.button-register button svg {
+    margin-right: 10px;
+    transition: margin-right 0.3s ease-in-out;
+}
+
+.button-register:hover button svg{
+    margin-right: 1px;
+}
+
