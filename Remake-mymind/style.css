@@ -117,6 +117,31 @@ nav .container-header .titles {
     margin-right: 1px;
 }
 
+.title-item:hover {
+    color: #2b2a2a;
+    transition: color 0.3s ease-in-out;
+}
+
+.title-item.orange:hover::before {
+    transition: box-shadow 0.3s ease-in-out;
+    box-shadow: 0px 0px 2px 2px rgb(255, 203, 124);
+}
+
+.title-item.yellow:hover::before {
+    transition: box-shadow 0.3s ease-in-out;
+    box-shadow: 0px 0px 2px 2px rgb(215, 243, 101);
+}
+
+
+.title-item.pink:hover::before {
+    transition: box-shadow 0.3s ease-in-out;
+    box-shadow: 0px 0px 2px 2px rgb(255, 135, 221);
+}
+
+.title-item.green:hover::before {
+    transition: box-shadow 0.3s ease-in-out;
+    box-shadow: 0px 0px 2px 2px rgb(160, 253, 134);
+}
 .section-header {
     background-image: linear-gradient(to right, #f89b48, #ff7e5d, #ff5e84, #ff4ab8, #f258f2);
     height: 100vh;
