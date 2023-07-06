@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -151,6 +153,19 @@ nav .container-header .titles {
     left: 0;
     right: 0;
 }
+
+.section-header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.493);
+    filter: blur(10px); 
+    z-index: -2;
+}
+
 .cercle-container{
     position: absolute;
     top: -40px;
@@ -162,6 +177,60 @@ nav .container-header .titles {
     height: 50vw;
     width: 50vw;
     background-color: #fff;
-    border-radius: 50%;
-    
+    border-radius: 50%;   
+}
+
+.titre{
+    padding-top: 7vw;
+}
+
+.titre h1{
+    font-family: 'Lora', serif;
+    font-size: 110px;
+    font-weight: lighter;
+    text-align: center;
+    margin: 0;
+}
+
+.description{
+    padding-top: 3vw;
+}
+
+.description p{
+    font-weight: lighter;
+    text-align: center;
+    color: rgb(110, 114, 118);
+    font-size: 1.5rem;
+    line-height: 45px;
+}
+
+span{
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 20px;
+}
+
+span.notes{
+    color: orange;
+    border: 1px solid orange;
+}
+
+span.bookmarks{
+    color: rgb(216, 29, 132);
+    border: 1px solid rgb(216, 29, 132);
+}
+
+span.inspiration{
+    color: rgb(70, 70, 228);
+    border: 1px solid rgb(70, 70, 228);
+}
+
+span.articles{
+    color: rgb(244, 128, 128);
+    border: 1px solid rgb(244, 128, 128);
+}
+
+span.images{
+    color: #FFCF27;
+    border: 1px solid #FFCF27;
 }
